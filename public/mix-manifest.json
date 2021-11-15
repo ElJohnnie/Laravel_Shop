@@ -1,0 +1,22 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/all.js": "/js/all.js",
+    "/js/checkout.js": "/js/checkout.js",
+    "/js/vanilla.js": "/js/vanilla.js",
+    "/js/owl.carousel.min.js": "/js/owl.carousel.min.js",
+    "/js/map.js": "/js/map.js",
+    "/js/main.js": "/js/main.js",
+    "/js/jquery.zoom.min.js": "/js/jquery.zoom.min.js",
+    "/js/jquery.slicknav.min.js": "/js/jquery.slicknav.min.js",
+    "/js/jquery.nicescroll.min.js": "/js/jquery.nicescroll.min.js",
+    "/js/jquery-ui.min.js": "/js/jquery-ui.min.js",
+    "/js/bannerPreview.js": "/js/bannerPreview.js",
+    "/js/cart.js": "/js/cart.js",
+    "/js/control-panel.js": "/js/control-panel.js",
+    "/js/checkout_address.js": "/js/checkout_address.js",
+    "/js/checkout_shipping.js": "/js/checkout_shipping.js",
+    "/js/checkout_payment.js": "/js/checkout_payment.js",
+    "/js/favorites.js": "/js/favorites.js",
+    "/js/sales.js": "/js/sales.js"
+}
