@@ -8,7 +8,7 @@
                         Olá, {{ $userName }}.
                     </h2>
                     <p>
-                        
+
                     </p>
                     <p>
                         O seu código de rastreio de seu pedido: <b>{{ $shippingCode }}</b>.
@@ -22,7 +22,7 @@
                         Se seus dados foram corretamente fornecidos, você também pode rastrar pelo seu CPF.
                     </p>
                     <p>
-                        Atenciosamente, Glitty Store.
+                        Atenciosamente, Laravel Shop.
                     </p>
                 </td>
             </tr>
