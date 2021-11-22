@@ -79,7 +79,9 @@
                     <input type="text" placeholder="Código promocional">
                     <button>Enviar</button>
                 </form>
-                <a href="{{route('checkout.index')}}" class="site-btn">Finalizar compra</a>
+                @if($cart)
+                    <a href="{{route('checkout.index')}}" class="site-btn">Finalizar compra</a>
+                @endif
                 {{-- @foreach($sellToWhatsCEP as $stwc)
                     @if(auth()->user()->cep == $stwc)
                         <a href="{{route('checkout.whatsapp')}}" class="site-btn sb-green">Comprar pelo Whatsapp</a>
