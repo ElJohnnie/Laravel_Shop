@@ -1,16 +1,15 @@
 /* JS Document */
 
-
 function deleteAddress(id, token, deleteAddressUrl) {
     let dados = {
         id: id,
         _token: token
     };
     $.ajax({
-        type: 'POST',
+        type: "POST",
         url: deleteAddressUrl,
         data: dados,
-        dataType: 'json',
+        dataType: "json",
         success(res) {
             if (res.data.status == true) {
                 sessionStorage.setItem(res.data.status, res.data.message);
@@ -20,6 +19,5 @@ function deleteAddress(id, token, deleteAddressUrl) {
         error: function(err) {
             console.log(err);
         }
-
     });
 }
