@@ -1,4 +1,4 @@
-p; /* JS Document */
+/* JS Document */
 
 $.ajax({
     type: "GET",
