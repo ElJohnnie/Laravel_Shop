@@ -55,7 +55,6 @@
                                     <a href="{{ route('admin.subcategory.edit', ['category' => $cs->id]) }}" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i>Editar</a>
                                     <form action="{{ route('admin.subcategory.destroy', ['category' => $cs->id]) }}" method="POST">
                                         @csrf
-                                        @method("DELETE")
                                         <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i>Excluir</button>
                                     </form>
                                 </div>

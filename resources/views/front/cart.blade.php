@@ -58,7 +58,7 @@
                                                 $total += $subtotal;
                                             @endphp
                                         </td>
-                                        <td class="total-col"><h4>R$ {{number_format($subtotal, 2, ',', '.')}}</h4></td>
+                                        <td class="total-col"><h4>R$ {{number_format($c['price'], 2, ',', '.')}}</h4></td>
                                         <td class="total-col"><a href="{{ route('cart.remove', ['product' => $c['id']]) }}" class="cart-btn sb-dark sb-line">Remover</a></td>
                                     </tr>
                                     @endforeach

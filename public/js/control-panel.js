@@ -1,16 +1,33 @@
 //categories
 function subCategorieDisplay() {
-    let asSub = document.querySelector("input[name=as_sub]");
     let position = document.querySelector("#position");
     let divSubCategorie = document.querySelector(".subcategorie-select");
-    if (asSub.checked == true) {
-        divSubCategorie.style.display = "block";
-        position.style.display = "none";
-    } else {
-        divSubCategorie.style.display = "none";
-        position.style.display = "block";
-    }
+    let subCheck = document.querySelector("input[name=as_sub]");
+    subCheck.checked ?
+        ((divSubCategorie.style.display = "block"),
+            (position.style.display = "none")) :
+        "";
+
+    subCheck.addEventListener("change", function() {
+        if (this.checked) {
+            divSubCategorie.style.display = "block";
+            position.style.display = "none";
+        } else {
+            divSubCategorie.style.display = "none";
+            position.style.display = "block";
+        }
+    });
 }
+
+document
+    .querySelector("input[name=as_sub]")
+    .addEventListener("change", function() {
+        this.checked ?
+            ((divSubCategorie.style.display = "block"),
+                (position.style.display = "none")) :
+            ((divSubCategorie.style.display = "none"),
+                (position.style.display = "block"));
+    });
 
 function clearSelectedCat() {
     var elements = document.getElementById("category-select").options;
@@ -31,7 +48,6 @@ function clearSelectedSubCat() {
     for (var i = 0; i < elements.length; i++) {
         elements[i].selected = false;
     }
-
 }
 
 function clearSelectedProductBanner() {
@@ -39,14 +55,13 @@ function clearSelectedProductBanner() {
     for (var i = 0; i < elements.length; i++) {
         elements[i].selected = false;
     }
-
 }
 //front-end
-var uploadfoto = document.getElementById('banner-input');
-var fotopreview = document.getElementById('banner-preview');
+var uploadfoto = document.getElementById("banner-input");
+var fotopreview = document.getElementById("banner-preview");
 
 if (uploadfoto) {
-    uploadfoto.addEventListener('change', function(e) {
+    uploadfoto.addEventListener("change", function(e) {
         showThumbnail(this.files);
     });
 
@@ -56,7 +71,7 @@ if (uploadfoto) {
 
             reader.onload = function(e) {
                 fotopreview.src = e.target.result;
-            }
+            };
 
             reader.readAsDataURL(files[0]);
         }
@@ -69,20 +84,20 @@ let divCategorieMid = document.querySelector(".category_link");
 let divSubCategorieMid = document.querySelector(".subcategory_link");
 midRadioChoice.forEach(function(el, k) {
     $(el).change(function() {
-        if (el.value == 'product') {
-            divProductMid.style.display = 'block';
+        if (el.value == "product") {
+            divProductMid.style.display = "block";
         } else {
-            divProductMid.style.display = 'none';
+            divProductMid.style.display = "none";
         }
-        if (el.value == 'cat') {
-            divCategorieMid.style.display = 'block';
+        if (el.value == "cat") {
+            divCategorieMid.style.display = "block";
         } else {
-            divCategorieMid.style.display = 'none';
+            divCategorieMid.style.display = "none";
         }
-        if (el.value == 'subcat') {
-            divSubCategorieMid.style.display = 'block';
+        if (el.value == "subcat") {
+            divSubCategorieMid.style.display = "block";
         } else {
-            divSubCategorieMid.style.display = 'none';
+            divSubCategorieMid.style.display = "none";
         }
     });
 });

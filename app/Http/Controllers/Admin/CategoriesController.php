@@ -50,7 +50,7 @@ class CategoriesController extends Controller
                 $category = Category::findOrFail($data['categorie']);
                 $category->sub_categories()->create($data);
                 flash('Sub-categoria cadastrada com sucesso')->success();
-                return redirect()->route('admin.categories.index');               
+                return redirect()->route('admin.categories.index');
             }else{
                 $categories = Category::all();
                 foreach($categories as $c){
@@ -113,7 +113,7 @@ class CategoriesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $category)
-    {   
+    {
         try{
             $id = $category;
             $data = $request->all();
@@ -136,7 +136,7 @@ class CategoriesController extends Controller
             $category->update($data);
             flash('Categoria editada com sucesso')->success();
             return redirect()->route('admin.categories.index');
-            
+
         }catch(\Exception $e){
             $message = 'Não foi possível atualizar categoria!';
             if(env('APP_DEBUG')) {
@@ -147,22 +147,25 @@ class CategoriesController extends Controller
         }
     }
     public function updateSubCategories(Request $request, $category)
-    {   
+    {
         try{
             $data = $request->all();
-            $id = $category;
             if(!isset($data['as_sub'])){
-                if(isset($data['position'])){
-                    $categories = Category::all();
-                    foreach($categories as $c){
-                        if($c->position == $data['position']){
-                            $toCategories = Category::Create($data);
-                            $c->position = (count($categories));
-                            $c->update();
-                        }
+                $categories = Category::all();
+                foreach($categories as $c){
+                    if($c->position == $data['position']){
+                        flash("Já existe uma categoria na posição selecionada.")->warning();
+                        return redirect()->back()->withInput();
+                    }else{
+                       Category::Create($data);
+                       $subCategory = SubCategorie::findOrFail($category);
+                       $subCategory->delete();
+                       flash('Categoria editada com sucesso')->success();
+                        return redirect()->route('admin.categories.index');
                     }
+
                 }
-                $category = SubCategorie::findOrFail($id);
+                $category = SubCategorie::findOrFail($category);
                 $category->delete();
                 flash('Categoria editada com sucesso')->success();
                 return redirect()->route('admin.categories.index');
@@ -171,7 +174,7 @@ class CategoriesController extends Controller
             $category->update($data);
             flash('Categoria editada com sucesso')->success();
             return redirect()->route('admin.categories.index');
-            
+
         }catch(\Exception $e){
             $message = 'Não foi possível atualizar categoria!';
             if(env('APP_DEBUG')) {
@@ -208,7 +211,7 @@ class CategoriesController extends Controller
     public function destroySubCategory($category)
     {
         try{
-            $category = SubCategory::findOrFail($category);
+            $category = SubCategorie::findOrFail($category);
             $category->delete();
             flash('Subcategoria excluída com sucesso')->success();
             return redirect()->route('admin.categories.index');
