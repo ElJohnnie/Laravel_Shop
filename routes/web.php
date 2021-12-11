@@ -38,6 +38,7 @@ Route::prefix('carrinho')->name('cart.')->group(function(){
     Route::get('/reset-password/{token}', function ($token) {
         return view('auth.passwords.reset', ['token' => $token]);
     })->middleware('guest')->name('password.reset');
+    Route::group(['middleware' => ['auth']], function () {
     Route::get('/areadocliente', 'UserPanelController@index')->name('cliente');
     Route::get('/areadocliente/endereço', 'UserPanelController@address')->name('cliente.endereço');
     Route::get('/areadocliente/pedidos', 'UserPanelController@orders')->name('cliente.pedidos');
@@ -71,6 +72,7 @@ Route::prefix('carrinho')->name('cart.')->group(function(){
         Route::get('/erro', 'CheckoutController@error')->name('error');
         Route::post('/notification', 'CheckoutController@notification')->name('notification');
     });
+});
 
 
 Route::group(['middleware' => ['auth', 'auth.admin']], function () {
