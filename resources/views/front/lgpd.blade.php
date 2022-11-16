@@ -17,7 +17,7 @@
     <blockquote class="blockquote">
         <h3 class="text-center">Política de Privacidade</h3>
         <p class="text-center institucional">
-            Na Fortuna Shop, privacidade e segurança são prioridades e nos comprometemos com a transparência do tratamento de dados pessoais dos nossos usuários/clientes. Por isso, esta presente Política de Privacidade estabelece como é feita a coleta, uso e transferência de informações de clientes ou outras pessoas que acessam ou usam nosso site.
+            Na Laravel Shop, privacidade e segurança são prioridades e nos comprometemos com a transparência do tratamento de dados pessoais dos nossos usuários/clientes. Por isso, esta presente Política de Privacidade estabelece como é feita a coleta, uso e transferência de informações de clientes ou outras pessoas que acessam ou usam nosso site.
 Ao utilizar nossos serviços, você entende que coletaremos e usaremos suas informações pessoais nas formas descritas nesta Política, sob as normas de Proteção de Dados (LGPD, Lei Federal 13.709/2018), das disposições consumeristas da Lei Federal 8078/1990 e as demais normas do ordenamento jurídico brasileiro aplicáveis.
         </p>
     </blockquote>
@@ -42,10 +42,10 @@ Ao utilizar nossos serviços, você entende que coletaremos e usaremos suas info
           <b>Seus dados bancários</b> também são utilizados apenas para o processo de pagamento da compra. Não sendo armazenado em nosso banco de dados após a efetivação da compra.
         </p>
         <h3 class="text-center">2.1. Consentimento</h3>
-        <p class="text-center institucional">É a partir do seu consentimento que tratamos os seus dados pessoais. O consentimento é a manifestação livre, informada e inequívoca pela qual você autoriza a Fortuna Shop a tratar seus dados.
+        <p class="text-center institucional">É a partir do seu consentimento que tratamos os seus dados pessoais. O consentimento é a manifestação livre, informada e inequívoca pela qual você autoriza a Laravel Shop a tratar seus dados.
             Assim, em consonância com a Lei Geral de Proteção de Dados, seus dados só serão coletados, tratados e armazenados mediante prévio e expresso consentimento. 
-            O seu consentimento será obtido de forma específica para cada finalidade acima descrita, evidenciando o compromisso de transparência e boa-fé da Fortuna Shop para com seus usuários/clientes, seguindo as regulações legislativas pertinentes.
-            Ao utilizar os serviços da Fortuna Shop e fornecer seus dados pessoais, você está ciente e consentindo com as disposições desta Política de Privacidade, além de conhecer seus direitos e como exercê-los.
+            O seu consentimento será obtido de forma específica para cada finalidade acima descrita, evidenciando o compromisso de transparência e boa-fé da Laravel Shop para com seus usuários/clientes, seguindo as regulações legislativas pertinentes.
+            Ao utilizar os serviços da Laravel Shop e fornecer seus dados pessoais, você está ciente e consentindo com as disposições desta Política de Privacidade, além de conhecer seus direitos e como exercê-los.
             A qualquer tempo e sem nenhum custo, você poderá revogar seu consentimento.
             É importante destacar que a revogação do consentimento para o tratamento dos dados pode implicar a impossibilidade da performance adequada de alguma funcionalidade do site que dependa da operação. Tais consequências serão informadas previamente.
         </p>

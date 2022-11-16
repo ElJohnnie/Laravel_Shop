@@ -64,7 +64,7 @@
 						<div class="col-xl-6 col-lg-5">
 							<form action="{{ route('search') }}" method="post" class="header-search-form">
 								@csrf
-								<input name="search" type="text" placeholder="Pesquise em Fortuna Shop">
+								<input name="search" type="text" placeholder="Pesquise em  Laravel Shop">
 								<button><i class="flaticon-search"></i></button>
 							</form>
 						</div>
@@ -208,7 +208,7 @@
 				<div class="col-lg-4 col-sm-6">
 					<div class="footer-widget about-widget">
 						<h2>Sobre nós</h2>
-						<p>Seja muito bem-vinda! Somos a Fortuna Shop, uma loja de...</p>
+						<p>Seja muito bem-vinda! Somos a Laravel Shop, uma loja de...</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6">
@@ -226,7 +226,7 @@
 						<h2>Contato</h2>
 						<div class="con-info">
 							<span>L.</span>
-							<p>Fortuna Shop</p>
+							<p> Laravel Shop</p>
 						</div>
 						<div class="con-info">
 							<span>E.</span>

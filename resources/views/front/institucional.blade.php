@@ -17,7 +17,7 @@
     <blockquote class="blockquote">
         <h3 class="text-center">Oi linda, tudo bem?</h3>
         <p class="text-center institucional">
-            <b>Seja muito bem-vinda!</b> Somos a Fortuna Shop, uma loja online. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.
+            <b>Seja muito bem-vinda!</b> Somos a Laravel Shop Shop, uma loja online. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.
         </p>
     </blockquote>
     <blockquote class="blockquote">

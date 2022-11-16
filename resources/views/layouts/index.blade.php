@@ -4,7 +4,7 @@
 	<title>{{ env("APP_NAME") }}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Fortuna Shop é uma loja de ...">
+    <meta name="description" content="A Laravel Shop é uma loja de ...">
 	<meta http-equiv="content-language" content="pt-br">
     <meta name="robots" content="index,follow">
     <meta name="author" content="JCODE - Soluções Web">
@@ -12,9 +12,9 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
-    <meta property="og:title" content="Fortuna Shop">
+    <meta property="og:title" content=" Laravel Shop">
     <meta property="og:image" content="{{ asset('img/bg.jpg') }}">
-    <meta property="og:description" content="A Fortuna Shop é uma loja de ...">
+    <meta property="og:description" content="A Laravel Shop é uma loja de ...">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
@@ -67,7 +67,7 @@
 						<div class="col-xl-6 col-lg-5">
 							<form action="{{ route('search') }}" method="post" class="header-search-form">
 								@csrf
-								<input name="search" type="text" placeholder="Pesquise em Fortuna Shop">
+								<input name="search" type="text" placeholder="Pesquise em  Laravel Shop">
 								<button><i class="flaticon-search"></i></button>
 							</form>
 						</div>
@@ -262,7 +262,7 @@
 				<div class="col-lg-4 col-sm-6">
 					<div class="footer-widget about-widget">
 						<h2>Sobre nós</h2>
-						<p>Seja muito bem-vinda! Somos a Fortuna Shop, uma loja de...</p>
+						<p>Seja muito bem-vinda! Somos a Laravel Shop, uma loja de...</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6">
@@ -280,7 +280,7 @@
 						<h2>Contato</h2>
 						<div class="con-info">
 							<span>L.</span>
-							<p>Fortuna Shop</p>
+							<p> Laravel Shop</p>
 						</div>
 						<div class="con-info">
 							<span>E.</span>

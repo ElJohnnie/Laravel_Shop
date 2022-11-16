@@ -67,7 +67,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col">
-                                <label>Preço <span class="text-muted">(números com pontos, ex: 3.99 para três reais e 99 centavos)</span></label>
+                                <label>Preço <span class="text-muted">(números com pontos, ex: 3.99 para três reais e noventa e nove centavos)</span></label>
                                 <input type="text" id="price" name="price" class="form-control @error('price') is-invalid @enderror" value="{{old('price')}}" required>
 
                                 @error('price')

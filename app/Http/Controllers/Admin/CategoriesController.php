@@ -114,10 +114,10 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $category)
     {
-        try{
+        try {
             $id = $category;
             $data = $request->all();
-            if(isset($data['as_sub'])){
+            if (isset($data['as_sub'])) {
                 $category = Category::findOrFail($data['categorie']);
                 $category->sub_categories()->create($data);
                 $category = Category::findOrFail($id);
@@ -127,8 +127,8 @@ class CategoriesController extends Controller
             }
             $category = Category::findOrFail($category);
             $categories = Category::all();
-            foreach($categories as $c){
-                if($c->position == $data['position']){
+            foreach ($categories as $c) {
+                if ($c->position == $data['position']) {
                     $c->position = $category->position;
                     $c->update();
                 }
