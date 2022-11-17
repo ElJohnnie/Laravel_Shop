@@ -150,14 +150,14 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Repita sua senha') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control important-field" name="password_confirmation" required autocomplete="new-password">
+                                <input password-confirm-data-test id="password-confirm" type="password" class="form-control important-field" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="site-btn sb-dark mt-1">
+                                <button submit-register-data-test type="submit" class="site-btn sb-dark mt-1">
                                     {{ __('Confirmar') }}
                                 </button>
                             </div>
