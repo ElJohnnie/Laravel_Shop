@@ -11,19 +11,19 @@ class OnlyAdminTest extends TestCase
     /** @test */
     public function only_logged_admins_access_route_dashboard()
     {
-        $response = $this->get('/admin/dashboard')
+        $this->get('/admin/dashboard')
             ->assertRedirect('/login');
     }
     /** @test */
     public function only_logged_admins_access_route_products()
     {
-        $response = $this->get('/admin/products')
+        $this->get('/admin/products')
             ->assertRedirect('/login');
     }
     /** @test */
     public function only_logged_admins_access_route_categories()
     {
-        $response = $this->get('/admin/categories')
+        $this->get('/admin/categories')
             ->assertRedirect('/login');
     }
 }

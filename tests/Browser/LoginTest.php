@@ -14,9 +14,6 @@ class LoginTest extends DuskTestCase
     /** @test */
     public function successful_login_test()
     {
-        // $user = factory(User::class)->create([
-        //     'email' => 'taylor@laravel.com',
-        // ]);
         $this->browse(function (Browser $browser) {
             $browser->visit('/login')
                     ->type('email', 'johnfollmer@teste.com')
