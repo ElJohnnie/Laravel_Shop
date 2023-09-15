@@ -7,8 +7,8 @@
 
 ### Laravel Shop
 
-- Integrations
-    -   Mail
-    - Pay insurance
+- Integrations API's
+    - Correios
+    - Pag Seguro
 
 > Project Status: In development :warning:
